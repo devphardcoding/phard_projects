@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<!--div ng-app="">
+  <p>Name : <input type="text" ng-model="name"></p>
+  <h1>Hello {{name}}</h1>
+</div-->
+
+<h1> Boards </h1>
+
+ <br>
+
+
+<table border="1">
+	<thead>
+		<tr>
+			<th>Board</th>
+			<th>Posts</th>
+			<th>Topic</th>
+			<th>Last Post</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for board in boards %}
+		<tr>
+			<td>{{ board.name }}<br>
+			<small style="color:#888">{{ board.Description }}</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+	{% endfor %}
+	</tbody>
+
+</table>
+
+
+</body>
+</html> 
